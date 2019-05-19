@@ -1,0 +1,1 @@
+This is just a sample file for the remote server in the RMI implementation

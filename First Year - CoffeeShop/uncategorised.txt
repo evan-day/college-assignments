@@ -1,0 +1,14 @@
+Loyalty Card Report for uncategorised customers
+
+===============================================
+
+Customer name		Customer email
+
+Mickey Mouse		mmouse@email.com
+
+Peter Parker		ppark@spiderman.com
+
+Cliona McGuane		cmcguane@cit.ie
+
+EvanDay		evanday@email.com
+

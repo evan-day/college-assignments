@@ -1,0 +1,14 @@
+Loyalty Card Report for bronze customers
+
+===============================================
+
+Customer name		Customer email
+
+Donald Duck		dduck@email.com
+
+Bugs Bunny		bbunny@email.ie
+
+Tony Stark		tony.stark@starkenterprises.com
+
+ChuckNorris		chucknorris@kickass.com
+

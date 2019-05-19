@@ -1,0 +1,6 @@
+Loyalty Card Report for gold customers
+
+===============================================
+
+Customer name		Customer email
+

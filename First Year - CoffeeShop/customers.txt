@@ -1,0 +1,45 @@
+MM1
+Mickey Mouse
+mmouse@email.com
+10.0
+50
+DD2
+Donald Duck
+dduck@email.com
+55.0
+20
+BB3
+Bugs Bunny
+bbunny@email.ie
+35.0
+100
+TS4
+Tony Stark
+tony.stark@starkenterprises.com
+45.0
+10
+PP5
+Peter Parker
+ppark@spiderman.com
+15.0
+5
+CM6
+Cliona McGuane
+cmcguane@cit.ie
+10.0
+20
+ED7
+EvanDay
+evanday@email.com
+17.5
+230
+CN8
+ChuckNorris
+chucknorris@kickass.com
+60.0
+280
+SS9
+SadhbhSlaven
+sadhbhslaven@gmail.com
+147.5
+645
