@@ -1,0 +1,8 @@
+Loyalty Card Report for silver customers
+
+===============================================
+
+Customer name		Customer email
+
+SadhbhSlaven		sadhbhslaven@gmail.com
+
