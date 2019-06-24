@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: customer-deployment
+  labels:
+    app: customer
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: customer
+  template:
+    metadata:
+      labels:
+        app: customer
+    spec:
+      containers:
+      - name: customer
+        image: registry.gitlab.com/evan-day-college/scalable-microservices-project-customer:development
+        ports:
+        - containerPort: 80
+        resources:
+          requests:
+            memory: "64Mi"
+            cpu: "75m"
+          limits:
+            memory: "128Mi"
+            cpu: "150m"
+        imagePullPolicy: Always
+      imagePullSecrets:
+      - name: gitlab-auth

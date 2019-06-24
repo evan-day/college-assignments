@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: subscription-deployment
+  labels:
+    app: subscription
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: subscription
+  template:
+    metadata:
+      labels:
+        app: subscription
+    spec:
+      containers:
+      - name: subscription
+        image: registry.gitlab.com/evan-day-college/scalable-microservices-project-subscription:development
+        ports:
+        - containerPort: 80
+        resources:
+          requests:
+            memory: "64Mi"
+            cpu: "75m"
+          limits:
+            memory: "128Mi"
+            cpu: "150m"
+        imagePullPolicy: Always
+      imagePullSecrets:
+      - name: gitlab-auth

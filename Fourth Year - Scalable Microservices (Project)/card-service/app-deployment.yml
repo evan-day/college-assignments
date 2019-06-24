@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: card-deployment
+  labels:
+    app: card
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: card
+  template:
+    metadata:
+      labels:
+        app: card
+    spec:
+      containers:
+      - name: card
+        image: registry.gitlab.com/evan-day-college/scalable-microservices-project-card:development
+        ports:
+        - containerPort: 80
+        resources:
+          requests:
+            memory: "64Mi"
+            cpu: "75m"
+          limits:
+            memory: "128Mi"
+            cpu: "150m"
+        imagePullPolicy: Always
+      imagePullSecrets:
+      - name: gitlab-auth

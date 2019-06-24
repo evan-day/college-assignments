@@ -23,3 +23,15 @@ updated for your machine.
 # Third Year - Distributed File Sharing System (RMI)
 
 This is essentially the same as the Sockets file sharing system, however it uses Java RMI in place of sockets.
+
+# Fourth Year - Frontend Frameworks (Portfolio)
+
+This was an assignment where we had to create a portfolio website for ourselves, using a framework that we chose ourselves. For the project, I decided to use ReactJS as my framework of choice and used Material UI as a design basis for the portfolio site.
+
+# Fourth Year - Real Time Systems (Assignment One and Two)
+
+In Real Time Systems, we did a variety of tasks which revolved generally around Process creation, sensors, actuators, signals, etc. The first assignment was a collection of tasks we had to undertake. The second assignment revolved around creating a subset of a real time system for a warehouse. I only managed to implement a small portion of my overall plan, which revolved around the loading and unloading bays of the warehouse. Nevertheless, I was happy with what I managed to implement given my circumstances!
+
+# Fourth Year - Scalable Microservices (Project)
+
+In Scalable Microservices, we were essentially given free reign to develop a project, so long as we had some form of inter service communication. I developed a set of services that leveraged Stripe's API in order to mimic a sort of online payment system. One could create and delete customers, add and delete card details, charge customers and subscribe them to a recurring billing plan. It was all implemented in NodeJS while using Pug as a templating engine for the front end. The services were running on Kubernetes and used an Ingress in order to expose endpoints that could be called by the required services. As with Real Time Systems, certain functionality was not able to be fully implemented. But I gained a thorough understanding of building REST APIs with NodeJS and successfully running those APIs in a Kubernetes cluster.

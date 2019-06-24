@@ -1,0 +1,48 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: scalable-microservices-ingress
+spec:
+  rules:
+  - host: project.evanday.io
+    http:
+      paths:
+      - path: /createCard
+        backend:
+          serviceName: card-service
+          servicePort: 80
+      - path: /deleteCard
+        backend:
+          serviceName: card-service
+          servicePort: 80
+      - path: /createCustomer
+        backend:
+          serviceName: customer-service
+          servicePort: 80
+      - path: /deleteCustomer
+        backend:
+          serviceName: customer-service
+          servicePort: 80
+      - path: /createDirectDebit
+        backend:
+          serviceName: direct-debit-service
+          servicePort: 80
+      - path: /deleteDirectDebit
+        backend:
+          serviceName: direct-debit-service
+          servicePort: 80
+      - backend:
+          serviceName: frontend-service
+          servicePort: 80
+      - path: /createPayment
+        backend:
+          serviceName: payment-service
+          servicePort: 80
+      - path: /createSubscription
+        backend:
+          serviceName: subscription-service
+          servicePort: 80
+      - path: /deleteSubscription
+        backend:
+          serviceName: subscription-service
+          servicePort: 80
