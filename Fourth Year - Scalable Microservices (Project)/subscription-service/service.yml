@@ -1,0 +1,11 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: subscription-service
+spec:
+  selector:
+    app: subscription
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 80
