@@ -1,7 +1,6 @@
 # College Assignments
 This is a repository for projects I worked on in college that I felt like sharing!
 
-**Coming Soon - Fourth Year Assignments!**
 
 # First Year - Coffee Shop
 
