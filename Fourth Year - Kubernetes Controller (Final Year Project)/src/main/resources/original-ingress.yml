@@ -4,7 +4,7 @@ metadata:
   name: fyp-ingress
 spec:
   rules:
-  - host: fyp.evanday.io
+  - host: fyp.DOMAIN_NAME
     http:
       paths:
       - path: /concourse
