@@ -1,1 +1,3 @@
 # Infrastructure Controller
+
+The Infrastructure Controller is the simplest out of the four parts of the project. All this does is sequentially send HTTP requests to every exposed endpoint in the project. This means that one only needs to visit /create for example on the URL that the controller is running on and it will call all the other controllers for the platform build out. The average time for a build out was around thirty minutes from start to finish. To delete the created resources, the /destroy endpoint will just call the Terraform Controller to delete the cluster, in a sort of pulling the rug out from underneath it fashion. We delete the cluster, we indirectly delete all the other tools that were deployed as part of the platform.
