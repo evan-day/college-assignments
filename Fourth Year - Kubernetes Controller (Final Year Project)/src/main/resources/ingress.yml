@@ -1,0 +1,24 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: fyp-ingress
+spec:
+  rules:
+  - host: concourse.DOMAIN_NAME
+    http:
+      paths:
+      - backend:
+          serviceName: concourse-web
+          servicePort: 8080
+  - host: artifactory.DOMAIN_NAME
+    http:
+      paths:
+      - backend:
+          serviceName: artifactory-artifactory-nginx
+          servicePort: 80
+  - host: sonarqube.DOMAIN_NAME
+    http:
+      paths:
+      - backend:
+          serviceName: sonarqube-sonarqube
+          servicePort: 9000
